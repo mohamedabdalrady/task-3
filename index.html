@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-bookmark"></i> Bookmark Manager</a>
+    </div>
+  </nav>
+
+
+  <div class="py-5 container">
+    <div class="row">
+    
+      <div class="col-md-6 mx-auto">
+        <div class="card shadow">
+          <div class="card-body">
+            <h2 class="card-title text-center text-primary mb-4">Bookmark your favorite websites</h2>
+            <div class="mb-3">
+              <label for="bookmarkName" class="form-label">Bookmark Name</label>
+              <div class="input-group">
+                <span class="input-group-text bg-primary text-white"><i class="fa-solid fa-tag"></i></span>
+                <input type="text" id="bookmarkName" class="form-control" placeholder="Enter a name">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="bookmarkURL" class="form-label">Website URL</label>
+              <div class="input-group">
+                <span class="input-group-text bg-primary text-white"><i class="fa-solid fa-link"></i></span>
+                <input type="url" id="bookmarkURL" class="form-control" placeholder="Enter a valid URL">
+              </div>
+            </div>
+            <button id="addBtn" class="btn btn-primary w-100"><i class="fa-solid fa-plus"></i> Add Bookmark</button>
+            <p id="error" class="text-danger mt-3 d-none"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="row mt-5">
+      <div class="col">
+        <table class="table table-hover table-bordered text-center">
+          <thead class="table-primary">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="bookmarkList"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
